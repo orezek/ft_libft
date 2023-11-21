@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aldokezer <aldokezer@student.42.fr>        +#+  +:+       +#+        */
+/*   By: orezek <orezek@student.42prague.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 11:08:06 by orezek            #+#    #+#             */
-/*   Updated: 2023/11/08 20:56:34 by aldokezer        ###   ########.fr       */
+/*   Updated: 2023/11/21 17:46:38 by orezek           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "../libft.h"
 
 int	initialize_buffer(int fd, char **buf)
 {
@@ -41,7 +41,7 @@ int	ft_has_newline(char *str)
 	return (0);
 }
 
-char	*ft_strjoin(char *s1, char *s2)
+char	*gnl_ft_strjoin(char *s1, char *s2)
 {
 	char	*new_str;
 	int		i;
@@ -79,7 +79,7 @@ char	*get_next_line(int fd)
 	{
 		while (!ft_has_newline(buf))
 		{
-			new_line = ft_strjoin(new_line, buf);
+			new_line = gnl_ft_strjoin(new_line, buf);
 			bytes_read = read(fd, buf, BUFFER_SIZE);
 			if (bytes_read <= 0 && new_line[0] == '\0')
 				return (free(buf), free(new_line), buf = NULL);
@@ -88,7 +88,7 @@ char	*get_next_line(int fd)
 			buf[bytes_read] = '\0';
 		}
 		temp = ft_extract_line_and_movebytes(buf);
-		return (new_line = ft_strjoin(new_line, temp), free(temp), new_line);
+		return (new_line = gnl_ft_strjoin(new_line, temp), free(temp), new_line);
 	}
 	return (new_line = ft_extract_line_and_movebytes(buf));
 }
