@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_hexlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: orezek <orezek@student.42prague.com>       +#+  +:+       +#+        */
+/*   By: aldokezer <aldokezer@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 18:15:46 by aldokezer         #+#    #+#             */
-/*   Updated: 2023/11/21 18:36:42 by orezek           ###   ########.fr       */
+/*   Updated: 2023/11/21 21:53:29 by aldokezer        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../libft.h"
 
-int	ft_hexlen(uint64_t bin_n)
+int	ft_prt_hexlen(uint64_t bin_n)
 {
 	int	i;
 

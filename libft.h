@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: orezek <orezek@student.42prague.com>       +#+  +:+       +#+        */
+/*   By: aldokezer <aldokezer@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 11:18:02 by orezek            #+#    #+#             */
-/*   Updated: 2023/11/21 18:38:53 by orezek           ###   ########.fr       */
+/*   Updated: 2023/11/21 22:02:40 by aldokezer        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 # include <unistd.h>
 # include <string.h>
 # include <stdlib.h>
+# include <stdarg.h>
 # include <errno.h>
 
 # ifndef BUFFER_SIZE
@@ -91,5 +92,23 @@ char	*ft_gnl_strncpy(char *dest, char *src, int n);
 void	*ft_gnl_memmove(void *to, const void *from, size_t size);
 int		ft_find_newline_position(char *str);
 // ft_printf part
-
+int		ft_prt_printf(const char *format, ...);
+char	*ft_prt_convert_number_to_hex(uint64_t bin_n);
+char	*ft_prt_convert_pointer_to_hex(uint64_t bin_n);
+int		ft_prt_hexlen(uint64_t bin_n);
+char	*ft_prt_itoa(int n);
+int		ft_prt_printf_short(char *format, int *ptr_chars_printed, va_list *args);
+void	ft_prt_putchar(char c, int *ptr_chars_printed);
+void	ft_prt_puthex_upper(unsigned int ptr_address, int *ptr_chars_printed);
+void	ft_prt_puthex(unsigned int ptr_address, int *ptr_chars_printed);
+void	ft_prt_putnbr_unsigned(unsigned int n, int *ptr_chars_printed);
+void	ft_prt_putnbr(int n, int *ptr_chars_printed);
+void	ft_prt_putptr(void *ptr_address, int *ptr_chars_printed);
+void	ft_prt_putstr_upper(char *str, int *ptr_chars_printed);
+void	ft_prt_putstr(char *str, int *ptr_chars_printed);
+char	*ft_prt_strcpy(char *des, char *src);
+char	*ft_prt_strdup(char *src);
+int		ft_prt_strlen(char *str);
+int		ft_prt_toupper(int c);
+char	*ft_prt_unsigned_itoa(int n);
 #endif

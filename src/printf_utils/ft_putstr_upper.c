@@ -3,17 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr_upper.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: orezek <orezek@student.42prague.com>       +#+  +:+       +#+        */
+/*   By: aldokezer <aldokezer@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 21:51:45 by aldokezer         #+#    #+#             */
-/*   Updated: 2023/11/21 18:37:25 by orezek           ###   ########.fr       */
+/*   Updated: 2023/11/21 21:57:01 by aldokezer        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../libft.h"
 
-void	ft_putstr_upper(char *str, int *ptr_chars_printed)
+void	ft_prt_putstr_upper(char *str, int *ptr_chars_printed)
 {
 	while (*str)
-		ft_putchar(ft_toupper(*(str++)), ptr_chars_printed);
+		ft_prt_putchar(ft_prt_toupper(*(str++)), ptr_chars_printed);
 }

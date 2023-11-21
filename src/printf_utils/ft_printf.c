@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: orezek <orezek@student.42prague.com>       +#+  +:+       +#+        */
+/*   By: aldokezer <aldokezer@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 15:27:30 by aldokezer         #+#    #+#             */
-/*   Updated: 2023/11/21 18:36:57 by orezek           ###   ########.fr       */
+/*   Updated: 2023/11/21 21:55:11 by aldokezer        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../libft.h"
 
-int	ft_printf(const char *format, ...)
+int	ft_prt_printf(const char *format, ...)
 {
 	va_list	args;
 	int		chars_printed;
@@ -26,11 +26,11 @@ int	ft_printf(const char *format, ...)
 		if (*format == '%')
 		{
 			format++;
-			if (ft_printf_short((char *)format, ptr_chars_printed, &args) == -1)
+			if (ft_prt_printf_short((char *)format, ptr_chars_printed, &args) == -1)
 				return (chars_printed += 1);
 		}
 		else
-			ft_putchar(*format, ptr_chars_printed);
+			ft_prt_putchar(*format, ptr_chars_printed);
 		format++;
 	}
 	return (va_end(args), chars_printed);

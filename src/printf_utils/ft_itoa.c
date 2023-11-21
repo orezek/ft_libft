@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: orezek <orezek@student.42prague.com>       +#+  +:+       +#+        */
+/*   By: aldokezer <aldokezer@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 12:37:20 by orezek            #+#    #+#             */
-/*   Updated: 2023/11/21 18:36:46 by orezek           ###   ########.fr       */
+/*   Updated: 2023/11/21 21:53:35 by aldokezer        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ static char	*ft_nconvert(long long n, char *ptr, int is_negative, int length)
 	return (nptr);
 }
 
-char	*ft_itoa(int n)
+char	*ft_prt_itoa(int n)
 {
 	long long	number;
 	int			is_negative;
