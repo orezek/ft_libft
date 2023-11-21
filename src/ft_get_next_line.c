@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.c                                    :+:      :+:    :+:   */
+/*   ft_get_next_line.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: orezek <orezek@student.42prague.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 11:08:06 by orezek            #+#    #+#             */
-/*   Updated: 2023/11/21 17:46:38 by orezek           ###   ########.fr       */
+/*   Updated: 2023/11/21 18:10:29 by orezek           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
 
-int	initialize_buffer(int fd, char **buf)
+int	ft_initialize_buffer(int fd, char **buf)
 {
 	int	bytes_read;
 
@@ -41,7 +41,7 @@ int	ft_has_newline(char *str)
 	return (0);
 }
 
-char	*gnl_ft_strjoin(char *s1, char *s2)
+char	*ft_gnl_strjoin(char *s1, char *s2)
 {
 	char	*new_str;
 	int		i;
@@ -65,7 +65,7 @@ char	*gnl_ft_strjoin(char *s1, char *s2)
 	return (new_str);
 }
 
-char	*get_next_line(int fd)
+char	*ft_get_next_line(int fd)
 {
 	static char	*buf;
 	char		*new_line;
@@ -73,13 +73,13 @@ char	*get_next_line(int fd)
 	int			bytes_read;
 
 	new_line = NULL;
-	if (buf == NULL && initialize_buffer(fd, &buf) == -1)
+	if (buf == NULL && ft_initialize_buffer(fd, &buf) == -1)
 		return (NULL);
 	if (!ft_has_newline(buf))
 	{
 		while (!ft_has_newline(buf))
 		{
-			new_line = gnl_ft_strjoin(new_line, buf);
+			new_line = ft_gnl_strjoin(new_line, buf);
 			bytes_read = read(fd, buf, BUFFER_SIZE);
 			if (bytes_read <= 0 && new_line[0] == '\0')
 				return (free(buf), free(new_line), buf = NULL);
@@ -88,7 +88,7 @@ char	*get_next_line(int fd)
 			buf[bytes_read] = '\0';
 		}
 		temp = ft_extract_line_and_movebytes(buf);
-		return (new_line = gnl_ft_strjoin(new_line, temp), free(temp), new_line);
+		return (new_line = ft_gnl_strjoin(new_line, temp), free(temp), new_line);
 	}
 	return (new_line = ft_extract_line_and_movebytes(buf));
 }

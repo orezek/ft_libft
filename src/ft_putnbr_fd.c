@@ -6,11 +6,11 @@
 /*   By: orezek <orezek@student.42prague.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 12:37:40 by orezek            #+#    #+#             */
-/*   Updated: 2023/11/16 14:38:17 by orezek           ###   ########.fr       */
+/*   Updated: 2023/11/21 17:58:52 by orezek           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 void	ft_putnbr_fd(int n, int fd)
 {

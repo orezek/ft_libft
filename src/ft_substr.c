@@ -6,11 +6,11 @@
 /*   By: orezek <orezek@student.42prague.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 12:38:16 by orezek            #+#    #+#             */
-/*   Updated: 2023/11/03 13:05:19 by orezek           ###   ########.fr       */
+/*   Updated: 2023/11/21 17:57:55 by orezek           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 char	*ft_start_is_bigger(char *ptr)
 {

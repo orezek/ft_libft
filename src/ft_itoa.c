@@ -6,11 +6,11 @@
 /*   By: orezek <orezek@student.42prague.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 12:37:20 by orezek            #+#    #+#             */
-/*   Updated: 2023/10/30 14:23:38 by orezek           ###   ########.fr       */
+/*   Updated: 2023/11/21 17:59:53 by orezek           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 static int	ft_nlength(long long n)
 {

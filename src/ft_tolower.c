@@ -6,11 +6,11 @@
 /*   By: orezek <orezek@student.42prague.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 12:37:03 by orezek            #+#    #+#             */
-/*   Updated: 2023/11/16 13:03:36 by orezek           ###   ########.fr       */
+/*   Updated: 2023/11/21 17:57:51 by orezek           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 static	int	ft_isupper(int c)
 {

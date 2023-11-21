@@ -6,11 +6,11 @@
 /*   By: orezek <orezek@student.42prague.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 12:36:58 by orezek            #+#    #+#             */
-/*   Updated: 2023/11/03 08:56:06 by orezek           ###   ########.fr       */
+/*   Updated: 2023/11/21 17:58:09 by orezek           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 char	*ft_strrchr(const char *string, int c)
 {

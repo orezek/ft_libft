@@ -6,11 +6,11 @@
 /*   By: orezek <orezek@student.42prague.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 12:30:30 by orezek            #+#    #+#             */
-/*   Updated: 2023/11/03 13:46:41 by orezek           ###   ########.fr       */
+/*   Updated: 2023/11/21 17:59:08 by orezek           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 void	*ft_memmove(void *to, const void *from, size_t size)
 {

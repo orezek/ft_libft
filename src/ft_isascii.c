@@ -6,11 +6,11 @@
 /*   By: orezek <orezek@student.42prague.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 12:29:42 by orezek            #+#    #+#             */
-/*   Updated: 2023/11/16 14:16:15 by orezek           ###   ########.fr       */
+/*   Updated: 2023/11/21 18:00:02 by orezek           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 int	ft_isascii(int c)
 {

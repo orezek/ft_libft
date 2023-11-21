@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aldokezer <aldokezer@student.42.fr>        +#+  +:+       +#+        */
+/*   By: orezek <orezek@student.42prague.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 12:38:11 by orezek            #+#    #+#             */
-/*   Updated: 2023/11/01 08:04:20 by aldokezer        ###   ########.fr       */
+/*   Updated: 2023/11/21 17:58:03 by orezek           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 // "abrakadabra" "abra" -> "kad"
 // "abrakadabra" "a" -> "brakadabr"

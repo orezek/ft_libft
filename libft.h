@@ -6,7 +6,7 @@
 /*   By: orezek <orezek@student.42prague.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 11:18:02 by orezek            #+#    #+#             */
-/*   Updated: 2023/11/21 11:34:33 by orezek           ###   ########.fr       */
+/*   Updated: 2023/11/21 18:09:12 by orezek           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,13 +81,13 @@ void	ft_lstclear(t_list **lst, void (*del)(void*));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 // getnextline part
-char	*get_next_line(int fd);
-int		gnl_ft_strlen(char *str);
-char	*gnl_ft_strjoin(char *s1, char *s2);
+char	*ft_get_next_line(int fd);
+int		ft_gnl_strlen(char *str);
+char	*ft_gnl_strjoin(char *s1, char *s2);
 char	*ft_extract_line_and_movebytes(char *buf);
 int		ft_has_newline(char *str);
-int		initialize_buffer(int fd, char **buf);
-char	*gnl_ft_strncpy(char *dest, char *src, int n);
-void	*gnl_ft_memmove(void *to, const void *from, size_t size);
+int		ft_initialize_buffer(int fd, char **buf);
+char	*ft_gnl_strncpy(char *dest, char *src, int n);
+void	*ft_gnl_memmove(void *to, const void *from, size_t size);
 int		ft_find_newline_position(char *str);
 #endif
