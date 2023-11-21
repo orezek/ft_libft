@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf_short.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aldokezer <aldokezer@student.42.fr>        +#+  +:+       +#+        */
+/*   By: orezek <orezek@student.42prague.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 17:12:45 by aldokezer         #+#    #+#             */
-/*   Updated: 2023/11/16 00:04:51 by aldokezer        ###   ########.fr       */
+/*   Updated: 2023/11/21 18:36:51 by orezek           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../ft_printf.h"
+#include "../../libft.h"
 
 int	ft_printf_short(char *format, int *ptr_chars_printed, va_list *args)
 {

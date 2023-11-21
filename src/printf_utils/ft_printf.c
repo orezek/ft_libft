@@ -6,11 +6,11 @@
 /*   By: orezek <orezek@student.42prague.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 15:27:30 by aldokezer         #+#    #+#             */
-/*   Updated: 2023/11/21 17:59:02 by orezek           ###   ########.fr       */
+/*   Updated: 2023/11/21 18:36:57 by orezek           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include "../../libft.h"
 
 int	ft_printf(const char *format, ...)
 {

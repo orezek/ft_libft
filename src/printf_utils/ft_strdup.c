@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aldokezer <aldokezer@student.42.fr>        +#+  +:+       +#+        */
+/*   By: orezek <orezek@student.42prague.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 16:33:03 by aldokezer         #+#    #+#             */
-/*   Updated: 2023/11/14 16:34:00 by aldokezer        ###   ########.fr       */
+/*   Updated: 2023/11/21 18:37:38 by orezek           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../ft_printf.h"
+#include "../../libft.h"
 
 char	*ft_strdup(char *src)
 {

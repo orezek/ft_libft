@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aldokezer <aldokezer@student.42.fr>        +#+  +:+       +#+        */
+/*   By: orezek <orezek@student.42prague.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 18:13:57 by aldokezer         #+#    #+#             */
-/*   Updated: 2023/11/13 18:14:16 by aldokezer        ###   ########.fr       */
+/*   Updated: 2023/11/21 18:37:42 by orezek           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../ft_printf.h"
+#include "../../libft.h"
 
 int	ft_strlen(char *str)
 {

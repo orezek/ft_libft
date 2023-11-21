@@ -1,26 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   test.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: orezek <orezek@student.42prague.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/13 18:15:06 by aldokezer         #+#    #+#             */
-/*   Updated: 2023/11/21 18:37:34 by orezek           ###   ########.fr       */
+/*   Created: 2023/11/21 18:14:05 by orezek            #+#    #+#             */
+/*   Updated: 2023/11/21 18:18:45 by orezek           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../libft.h"
+#include "libft.h"
 
-char	*ft_strcpy(char *des, char *src)
+int	main (void)
+
 {
-	char	*ptr_des;
 
-	ptr_des = des;
-	while (*src)
-	{
-		*des++ = *src++;
-	}
-	*des = '\0';
-	return (ptr_des);
+	char	*str = "12345";
+	ft_putstr_fd(str, 1);
+	return (0);
+
 }

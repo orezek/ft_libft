@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putptr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aldokezer <aldokezer@student.42.fr>        +#+  +:+       +#+        */
+/*   By: orezek <orezek@student.42prague.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 18:39:54 by aldokezer         #+#    #+#             */
-/*   Updated: 2023/11/15 23:55:24 by aldokezer        ###   ########.fr       */
+/*   Updated: 2023/11/21 18:37:21 by orezek           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../ft_printf.h"
+#include "../../libft.h"
 
 void	ft_putptr(void *ptr_address, int *ptr_chars_printed)
 {

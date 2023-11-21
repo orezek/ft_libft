@@ -6,7 +6,7 @@
 /*   By: orezek <orezek@student.42prague.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 11:18:02 by orezek            #+#    #+#             */
-/*   Updated: 2023/11/21 18:09:12 by orezek           ###   ########.fr       */
+/*   Updated: 2023/11/21 18:38:53 by orezek           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,4 +90,6 @@ int		ft_initialize_buffer(int fd, char **buf);
 char	*ft_gnl_strncpy(char *dest, char *src, int n);
 void	*ft_gnl_memmove(void *to, const void *from, size_t size);
 int		ft_find_newline_position(char *str);
+// ft_printf part
+
 #endif

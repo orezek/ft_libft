@@ -6,11 +6,11 @@
 /*   By: orezek <orezek@student.42prague.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 12:41:18 by aldokezer         #+#    #+#             */
-/*   Updated: 2023/11/15 15:10:00 by orezek           ###   ########.fr       */
+/*   Updated: 2023/11/21 18:36:20 by orezek           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../ft_printf.h"
+#include "../../libft.h"
 
 // 0b = binary
 // 0x = hexadecimal

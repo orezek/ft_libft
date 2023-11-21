@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_puthex_upper.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aldokezer <aldokezer@student.42.fr>        +#+  +:+       +#+        */
+/*   By: orezek <orezek@student.42prague.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 13:04:37 by aldokezer         #+#    #+#             */
-/*   Updated: 2023/11/16 00:13:58 by aldokezer        ###   ########.fr       */
+/*   Updated: 2023/11/21 18:37:04 by orezek           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../ft_printf.h"
+#include "../../libft.h"
 
 void	ft_puthex_upper(unsigned int ptr_address, int *ptr_chars_printed)
 {

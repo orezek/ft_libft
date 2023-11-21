@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr_upper.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aldokezer <aldokezer@student.42.fr>        +#+  +:+       +#+        */
+/*   By: orezek <orezek@student.42prague.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 21:51:45 by aldokezer         #+#    #+#             */
-/*   Updated: 2023/11/14 13:17:32 by aldokezer        ###   ########.fr       */
+/*   Updated: 2023/11/21 18:37:25 by orezek           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../ft_printf.h"
+#include "../../libft.h"
 
 void	ft_putstr_upper(char *str, int *ptr_chars_printed)
 {

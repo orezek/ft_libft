@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_unsigned.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aldokezer <aldokezer@student.42.fr>        +#+  +:+       +#+        */
+/*   By: orezek <orezek@student.42prague.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/11 11:09:37 by aldokezer         #+#    #+#             */
-/*   Updated: 2023/11/16 00:20:08 by aldokezer        ###   ########.fr       */
+/*   Updated: 2023/11/21 18:37:14 by orezek           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../ft_printf.h"
+#include "../../libft.h"
 
 void	ft_putnbr_unsigned(unsigned int n, int *ptr_chars_printed)
 {

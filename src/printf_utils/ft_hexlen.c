@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_hexlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aldokezer <aldokezer@student.42.fr>        +#+  +:+       +#+        */
+/*   By: orezek <orezek@student.42prague.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 18:15:46 by aldokezer         #+#    #+#             */
-/*   Updated: 2023/11/15 21:22:02 by aldokezer        ###   ########.fr       */
+/*   Updated: 2023/11/21 18:36:42 by orezek           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../ft_printf.h"
+#include "../../libft.h"
 
 int	ft_hexlen(uint64_t bin_n)
 {
