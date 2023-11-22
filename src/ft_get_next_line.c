@@ -6,7 +6,7 @@
 /*   By: aldokezer <aldokezer@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 11:08:06 by orezek            #+#    #+#             */
-/*   Updated: 2023/11/22 14:04:27 by aldokezer        ###   ########.fr       */
+/*   Updated: 2023/11/22 14:23:32 by aldokezer        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,8 @@ char	*ft_gnl_strjoin(char *s1, char *s2)
 
 	i = 0;
 	j = 0;
-	new_str = malloc(sizeof(char) * (ft_gnl_strlen(s1) + ft_gnl_strlen(s2) + 1));
+	new_str = malloc
+		(sizeof(char) * (ft_gnl_strlen(s1) + ft_gnl_strlen(s2) + 1));
 	if (!new_str)
 		return (NULL);
 	if (s1)
@@ -89,7 +90,8 @@ char	*ft_get_next_line(int fd)
 			buf[bytes_read] = '\0';
 		}
 		temp = ft_extract_line_and_movebytes(buf);
-		return (new_line = ft_gnl_strjoin(new_line, temp), free(temp), new_line);
+		return (new_line = ft_gnl_strjoin
+			(new_line, temp), free(temp), new_line);
 	}
 	return (new_line = ft_extract_line_and_movebytes(buf));
 }

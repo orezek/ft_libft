@@ -6,12 +6,12 @@
 /*   By: aldokezer <aldokezer@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/04 16:51:06 by aldokezer         #+#    #+#             */
-/*   Updated: 2023/11/22 14:06:41 by aldokezer        ###   ########.fr       */
+/*   Updated: 2023/11/22 14:24:52 by aldokezer        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GET_NEXT_LINE_H
-# define GET_NEXT_LINE_H
+#ifndef FT_GNL_H
+# define FT_GNL_H
 
 # include <stdio.h>
 # include <stdlib.h>
