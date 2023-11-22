@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_get_next_line_utils.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: orezek <orezek@student.42prague.com>       +#+  +:+       +#+        */
+/*   By: aldokezer <aldokezer@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/05 22:24:23 by aldokezer         #+#    #+#             */
-/*   Updated: 2023/11/21 18:11:40 by orezek           ###   ########.fr       */
+/*   Updated: 2023/11/22 14:03:54 by aldokezer        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include "./ft_gnl.h"
 
 int	ft_gnl_strlen(char *str)
 {
@@ -85,7 +85,8 @@ char	*ft_extract_line_and_movebytes(char *buf)
 		newline = malloc(sizeof(char) * (nl_pos + 2));
 		newline = ft_gnl_strncpy(newline, buf, nl_pos + 1);
 		newline[nl_pos + 1] = '\0';
-		buf = ft_gnl_memmove(buf, buf + nl_pos + 1, ft_gnl_strlen(buf) - nl_pos);
+		buf = ft_gnl_memmove
+			(buf, buf + nl_pos + 1, ft_gnl_strlen(buf) - nl_pos);
 		return (newline);
 	}
 	return (NULL);

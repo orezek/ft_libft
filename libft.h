@@ -6,7 +6,7 @@
 /*   By: aldokezer <aldokezer@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 11:18:02 by orezek            #+#    #+#             */
-/*   Updated: 2023/11/22 10:37:14 by aldokezer        ###   ########.fr       */
+/*   Updated: 2023/11/22 14:09:32 by aldokezer        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,16 +81,8 @@ void	ft_lstdelone(t_list *lst, void (*del)(void*));
 void	ft_lstclear(t_list **lst, void (*del)(void*));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
-// getnextline part
+// ft_get_next_line
 char	*ft_get_next_line(int fd);
-int		ft_gnl_strlen(char *str);
-char	*ft_gnl_strjoin(char *s1, char *s2);
-char	*ft_extract_line_and_movebytes(char *buf);
-int		ft_has_newline(char *str);
-int		ft_initialize_buffer(int fd, char **buf);
-char	*ft_gnl_strncpy(char *dest, char *src, int n);
-void	*ft_gnl_memmove(void *to, const void *from, size_t size);
-int		ft_find_newline_position(char *str);
-// ft_printf part
+// ft_printf
 int		ft_printf(const char *format, ...);
 #endif

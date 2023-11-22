@@ -6,11 +6,12 @@
 /*   By: aldokezer <aldokezer@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 11:08:06 by orezek            #+#    #+#             */
-/*   Updated: 2023/11/21 22:21:55 by aldokezer        ###   ########.fr       */
+/*   Updated: 2023/11/22 14:04:27 by aldokezer        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
+#include "./gnl_utils/ft_gnl.h"
 
 int	ft_initialize_buffer(int fd, char **buf)
 {
