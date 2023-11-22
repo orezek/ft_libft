@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf_short.c                                  :+:      :+:    :+:   */
+/*   ft_prt_printf_short.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aldokezer <aldokezer@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 17:12:45 by aldokezer         #+#    #+#             */
-/*   Updated: 2023/11/21 21:54:36 by aldokezer        ###   ########.fr       */
+/*   Updated: 2023/11/22 10:33:25 by aldokezer        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../libft.h"
+#include "ft_printf.h"
 
 int	ft_prt_printf_short(char *format, int *ptr_chars_printed, va_list *args)
 {

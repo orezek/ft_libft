@@ -6,13 +6,14 @@
 /*   By: aldokezer <aldokezer@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 15:27:30 by aldokezer         #+#    #+#             */
-/*   Updated: 2023/11/21 21:55:11 by aldokezer        ###   ########.fr       */
+/*   Updated: 2023/11/22 10:32:10 by aldokezer        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../libft.h"
+#include "../libft.h"
+#include "./printf_utils/ft_printf.h"
 
-int	ft_prt_printf(const char *format, ...)
+int	ft_printf(const char *format, ...)
 {
 	va_list	args;
 	int		chars_printed;
@@ -26,7 +27,8 @@ int	ft_prt_printf(const char *format, ...)
 		if (*format == '%')
 		{
 			format++;
-			if (ft_prt_printf_short((char *)format, ptr_chars_printed, &args) == -1)
+			if (ft_prt_printf_short(
+					(char *)format, ptr_chars_printed, &args) == -1)
 				return (chars_printed += 1);
 		}
 		else

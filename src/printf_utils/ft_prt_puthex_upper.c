@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_puthex_upper.c                                  :+:      :+:    :+:   */
+/*   ft_prt_puthex_upper.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aldokezer <aldokezer@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 13:04:37 by aldokezer         #+#    #+#             */
-/*   Updated: 2023/11/21 21:55:32 by aldokezer        ###   ########.fr       */
+/*   Updated: 2023/11/22 10:33:33 by aldokezer        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../libft.h"
+#include "ft_printf.h"
 
 void	ft_prt_puthex_upper(unsigned int ptr_address, int *ptr_chars_printed)
 {

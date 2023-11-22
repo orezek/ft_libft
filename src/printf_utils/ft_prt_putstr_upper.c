@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_upper.c                                  :+:      :+:    :+:   */
+/*   ft_prt_putstr_upper.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aldokezer <aldokezer@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 21:51:45 by aldokezer         #+#    #+#             */
-/*   Updated: 2023/11/21 21:57:01 by aldokezer        ###   ########.fr       */
+/*   Updated: 2023/11/22 10:33:55 by aldokezer        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../libft.h"
+#include "ft_printf.h"
 
 void	ft_prt_putstr_upper(char *str, int *ptr_chars_printed)
 {

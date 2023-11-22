@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_convert_number_to_hex.c                         :+:      :+:    :+:   */
+/*   ft_prt_convert_number_to_hex.c                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aldokezer <aldokezer@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 12:41:18 by aldokezer         #+#    #+#             */
-/*   Updated: 2023/11/21 22:01:07 by aldokezer        ###   ########.fr       */
+/*   Updated: 2023/11/22 10:32:58 by aldokezer        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../libft.h"
+#include "ft_printf.h"
 
 // 0b = binary
 // 0x = hexadecimal

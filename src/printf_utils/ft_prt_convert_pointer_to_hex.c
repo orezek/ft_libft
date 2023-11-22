@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_convert_pointer_to_hex.c                        :+:      :+:    :+:   */
+/*   ft_prt_convert_pointer_to_hex.c                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aldokezer <aldokezer@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 18:10:11 by aldokezer         #+#    #+#             */
-/*   Updated: 2023/11/21 22:01:26 by aldokezer        ###   ########.fr       */
+/*   Updated: 2023/11/22 10:33:12 by aldokezer        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../libft.h"
+#include "ft_printf.h"
 
 char	*ft_prt_convert_pointer_to_hex(uint64_t bin_n)
 {
